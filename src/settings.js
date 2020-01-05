@@ -1375,6 +1375,8 @@ var USE_PTHREADS = 0;
 // have their runtimes loaded on demand after the main runtime is initialized.
 // Note that this means that the workers cannot be joined from the main thread
 // unless PROXY_TO_PTHREAD is used.
+// TODO: if -1, as the num of CPU cores? move navigator.hardwareConcurrency to
+// a global, and use node.js API when on node? os.cpus().lengthgi
 var PTHREAD_POOL_SIZE = 0;
 var PTHREAD_POOL_DELAY_LOAD = 0;
 
